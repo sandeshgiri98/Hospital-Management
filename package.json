@@ -20,7 +20,9 @@
         "vite": "^6.3.5"
     },
     "dependencies": {
+        "@lottiefiles/dotlottie-vue": "^0.7.1",
         "@popperjs/core": "^2.11.8",
-        "bootstrap": "^5.3.6"
+        "bootstrap": "^5.3.6",
+        "vue": "^3.5.16"
     }
 }

@@ -6,14 +6,9 @@ Route::get('/', function () {
     return view('landing');
 })->name('home');
 
-// just for landing page testing
-Route::get('/navbar', function () {
-    return view('landing/navbar');
-})->name('home');
-
-Route::get('/footer', function () {
-    return view('landing/footer');
-})->name('home');
+Route::get('/testimonial', function () {
+    return view('landing/testimonial');
+})->name('testomonial');
 
 Route::middleware([
     'auth:sanctum',

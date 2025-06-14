@@ -1,3 +1,4 @@
+@include('landing.navbar')
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
@@ -43,3 +44,4 @@
         </div>
     </x-authentication-card>
 </x-guest-layout>
+@include('footer.navbar')
