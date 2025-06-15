@@ -95,19 +95,19 @@
                             testimonials: [
                                 {
                                     img: "{{ asset('images/testimonial-01.jpg') }}",
-                                    quote: "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to select between formats.",
+                                    quote: "I’ve never experienced such seamless care coordination. From appointment booking to discharge, Sandesh Hospital’s system made everything fast, easy, and stress-free. Truly a 21st-century hospital!",
                                     name: 'Sandesh Giri',
                                     role: 'The Program Manager'
                                 },
                                 {
                                     img: "{{ asset('images/testimonial-02.jpg') }}",
-                                    quote: "Having the power to capture user feedback is revolutionary. Even if a participant abandons the sign-up process midway, their valuable input remains intact.",
+                                    quote: "Sandesh Hospital's new management system is a game-changer. I could view my medical history online, track prescriptions, and receive timely reminders. Healthcare has never been this efficient!",
                                     name: 'Modit Tuladhar',
                                     role: 'Sr. Full Stack Developer'
                                 },
                                 {
                                     img: "{{ asset('images/testimonial-03.jpg') }}",
-                                    quote: "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
+                                    quote: "As a patient, I felt valued and cared for. The hospital's digital system ensured quick responses and reduced waiting time significantly. I highly recommend Sandesh Hospital.",
                                     name: 'Rohit Gurung',
                                     role: 'Patient'
                                 },

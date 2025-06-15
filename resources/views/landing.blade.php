@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,34 @@
     <title>@yield('title', 'Sandesh Hospital')</title>
 
     @vite('resources/css/app.css')
-
     <script src="https://unpkg.com/preline@latest/dist/preline.js"></script>
 
-
-
 </head>
-<body>
-    @include('landing.navbar')
 
-    <main class="flex-grow">
-        @yield('content')
+<body class="bg-white text-gray-800">
+
+<div>
+    @include('landing.navbar')
+</div>
+    <main class="pt-16">
+        {{-- Image Slider --}}
+        <div>
+            @include('landing.imageslider')
+        </div>
+        <div>
+            @include('landing.services')
+        </div>
+        <div>
+            @include('landing.testimonial')
+        </div>
+        <div>
+            @include('landing.contact')
+        </div>
+        <div>
+            @include('landing.footer')
+        </div>
     </main>
-    @include('landing.imageslider')
-    {{-- @include('landing.contact') --}}
-  @include('landing.testimonial')
-    @include('landing.footer')
+
 </body>
+
 </html>

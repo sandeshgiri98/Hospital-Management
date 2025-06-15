@@ -1,14 +1,14 @@
 <?php
-
+use App\Http\Controllers\MapController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('landing');
 })->name('home');
 
-Route::get('/testimonial', function () {
-    return view('landing/testimonial');
-})->name('testomonial');
+Route::get('/imageslider', function () {
+    return view('landing/imageslider');
+})->name('slider');
 
 Route::middleware([
     'auth:sanctum',
@@ -19,3 +19,14 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+// Resetting the password
+
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->middleware('guest')->name('password.request');
+
+//maps
+Route::get('/googlemaps', function () {
+    return view('landing/map');
+})->name('maps');

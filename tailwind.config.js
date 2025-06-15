@@ -19,6 +19,7 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 inter: ['Inter', 'sans-serif'],
                 bebas: ['Bebas Neue', 'sans-serif'],
+                edunsw: ['"Edu NSW ACT Cursive"', 'cursive'],
             },
         },
     },

@@ -23,6 +23,9 @@
         "@lottiefiles/dotlottie-vue": "^0.7.1",
         "@popperjs/core": "^2.11.8",
         "bootstrap": "^5.3.6",
+        "clsx": "^2.1.1",
+        "motion": "^12.18.1",
+        "tailwind-merge": "^3.3.1",
         "vue": "^3.5.16"
     }
 }
