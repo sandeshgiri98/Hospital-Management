@@ -1,10 +1,18 @@
 <?php
 use App\Http\Controllers\MapController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserRoleController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
-Route::get('/', function () {
-    return view('landing');
-})->name('home');
+// Route::get('/', function () {
+//     return view('landing');
+// })->name('home');
+
+Route::middleware(['guest'])->group(function () {
+    Route::get('/', function () {
+        return view('landing');  // or your landing page
+    })->name('home');
+});
 
 Route::get('/imageslider', function () {
     return view('landing/imageslider');
@@ -30,3 +38,8 @@ Route::get('/forgot-password', function () {
 Route::get('/googlemaps', function () {
     return view('landing/map');
 })->name('maps');
+
+Route::post('/user/{user}/assign-role', [UserRoleController::class, 'assignRole']);
+Route::post('/user/{user}/give-permission', [UserRoleController::class, 'givePermission']);
+Route::post('/role/assign-permissions', [UserRoleController::class, 'assignPermissionToRole']);
+

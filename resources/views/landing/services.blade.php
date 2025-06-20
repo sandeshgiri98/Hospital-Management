@@ -3,7 +3,7 @@
         <div class="max-w-screen-md mb-8 lg:mb-6">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold">
                 <span class="text-black">SPECIAL</span>
-                <span class="text-blue-700"> HIGH-QUALITY </span>
+                <span class="text-[oklch(45.7%_0.24_277.023)] uppercase">HIGH-QUALITY</span>
                 <span class="text-black">SERVICES</span>
             </h2>
 

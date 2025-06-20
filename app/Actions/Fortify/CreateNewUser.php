@@ -33,5 +33,9 @@ class CreateNewUser implements CreatesNewUsers
             'phone' => $input['phone'],
             'password' => Hash::make($input['password']),
         ]);
+
+        $user->assignRole('patient');
+
+        return $user;
     }
 }
